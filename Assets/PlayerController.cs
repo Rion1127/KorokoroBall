@@ -6,7 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     public float power = 10;
     public Rigidbody rigidbody;
+    //public GameOver gameOver;
     // Start is called before the first frame update
+    
     void Start()
     {
         
@@ -34,5 +36,8 @@ public class PlayerController : MonoBehaviour
         {
             rigidbody.AddForce(new Vector3(0, 0, -1) * power);
         }
+        
+        
+
     }
 }

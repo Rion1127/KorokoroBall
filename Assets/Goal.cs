@@ -6,6 +6,7 @@ public class Goal : MonoBehaviour
 {
     public GameObject clearText;
     public GameObject nextButton;
+    public AudioSource audioSource; //音楽を再生するコンポーネント
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,5 +14,6 @@ public class Goal : MonoBehaviour
 
         clearText.SetActive(true);
         nextButton.SetActive(true);
+        audioSource.Play();
     }
 }
